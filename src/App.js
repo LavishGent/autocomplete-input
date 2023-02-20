@@ -1,23 +1,117 @@
-import logo from './logo.svg';
-import './App.css';
+import AutoComplete from "./AutoComplete.js";
+import "./App.css";
+
+const arr = [
+  "apple",
+  "banana",
+  "cherry",
+  "date",
+  "elderberry",
+  "fig",
+  "grape",
+  "honeydew",
+  "imbe",
+  "jackfruit",
+  "kiwi",
+  "lemon",
+  "mango",
+  "nectarine",
+  "orange",
+  "papaya",
+  "quince",
+  "raspberry",
+  "strawberry",
+  "tangerine",
+  "ugli fruit",
+  "vanilla bean",
+  "watermelon",
+  "xigua",
+  "yellow watermelon",
+  "zucchini",
+  "apricot",
+  "blackberry",
+  "cantaloupe",
+  "dragonfruit",
+  "eggfruit",
+  "feijoa",
+  "grapefruit",
+  "huckleberry",
+  "indian gooseberry",
+  "jujube",
+  "kumquat",
+  "lime",
+  "mandarin",
+  "nutmeg",
+  "olive",
+  "pear",
+  "quince",
+  "rhubarb",
+  "starfruit",
+  "tangelo",
+  "umeboshi",
+  "victoria plum",
+  "white currant",
+  "ximenia",
+  "yellow passionfruit",
+  "zinfandel grapes",
+  "almond",
+  "blueberry",
+  "coconut",
+  "date palm",
+  "elderflower",
+  "fig",
+  "gooseberry",
+  "honeyberry",
+  "indian almond",
+  "juniper berry",
+  "kiwano",
+  "lychee",
+  "mulberry",
+  "nectar",
+  "orange blossom",
+  "peach",
+  "raisin",
+  "soursop",
+  "tangerine",
+  "uva ursi",
+  "vanilla orchid",
+  "watercress",
+  "xigua",
+  "yellow pitahaya",
+  "zestar apple",
+  "acorn squash",
+  "beetroot",
+  "carrot",
+  "dill",
+  "endive",
+  "fennel",
+  "grape leaves",
+  "hijiki",
+  "italian parsley",
+  "jicama",
+  "kale",
+  "leek",
+  "mustard greens",
+  "napa cabbage",
+  "okra",
+  "pumpkin",
+  "radicchio",
+  "spinach",
+  "turnip",
+  "ugly tomato",
+  "vermicelli noodles",
+  "water chestnut",
+  "xigua melon",
+  "yellow pepper",
+  "zucchini blossom",
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AutoComplete
+        suggestions={arr}
+      />
     </div>
   );
 }
